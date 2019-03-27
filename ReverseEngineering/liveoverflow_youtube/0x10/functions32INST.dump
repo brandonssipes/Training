@@ -1,0 +1,133 @@
+000004ed <fun1>:
+push   ebp
+mov    ebp,esp
+call   616 <__x86.get_pc_thunk.ax>
+add    eax,0x1ae7
+nop
+nop
+pop    ebp
+ret    
+
+000004fe <fun2>:
+push   ebp
+mov    ebp,esp
+call   616 <__x86.get_pc_thunk.ax>
+add    eax,0x1ad6
+nop
+mov    eax,0x1234
+pop    ebp
+ret    
+
+00000513 <fun3>:
+push   ebp
+mov    ebp,esp
+call   616 <__x86.get_pc_thunk.ax>
+add    eax,0x1ac1
+nop
+mov    eax,DWORD PTR [ebp+0x8]
+add    eax,0x1
+pop    ebp
+ret    
+
+00000529 <fun4>:
+push   ebp
+mov    ebp,esp
+call   616 <__x86.get_pc_thunk.ax>
+add    eax,0x1aab
+nop
+mov    edx,DWORD PTR [ebp+0x8]
+mov    eax,DWORD PTR [ebp+0xc]
+add    eax,edx
+pop    ebp
+ret    
+
+00000541 <fun5>:
+push   ebp
+mov    ebp,esp
+call   616 <__x86.get_pc_thunk.ax>
+add    eax,0x1a93
+nop
+mov    edx,DWORD PTR [ebp+0x8]
+mov    eax,DWORD PTR [ebp+0xc]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x10]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x14]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x18]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x1c]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x20]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x24]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x28]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x2c]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x30]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x34]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x38]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x3c]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x40]
+add    edx,eax
+mov    eax,DWORD PTR [ebp+0x44]
+add    eax,edx
+pop    ebp
+ret    
+
+0000059f <main>:
+push   ebp
+mov    ebp,esp
+sub    esp,0x10
+call   616 <__x86.get_pc_thunk.ax>
+add    eax,0x1a32
+nop
+call   4ed <fun1>
+nop
+call   4fe <fun2>
+mov    DWORD PTR [ebp-0x10],eax
+nop
+mov    eax,DWORD PTR [ebp-0x10]
+push   eax
+call   513 <fun3>
+add    esp,0x4
+mov    DWORD PTR [ebp-0xc],eax
+nop
+mov    edx,DWORD PTR [ebp-0xc]
+mov    eax,DWORD PTR [ebp-0x10]
+push   edx
+push   eax
+call   529 <fun4>
+add    esp,0x8
+mov    DWORD PTR [ebp-0x8],eax
+nop
+push   0xf
+push   0xe
+push   0xd
+push   0xc
+push   0xb
+push   0xa
+push   0x9
+push   0x8
+push   0x7
+push   0x6
+push   0x5
+push   0x4
+push   0x3
+push   0x2
+push   0x1
+push   0x0
+call   541 <fun5>
+add    esp,0x40
+mov    DWORD PTR [ebp-0x4],eax
+nop
+mov    eax,0x0
+leave  
+ret    
+

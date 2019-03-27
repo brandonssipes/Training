@@ -1,0 +1,134 @@
+000000000000066a <main>:
+push   rbp
+mov    rbp,rsp
+sub    rsp,0xd0
+mov    rax,QWORD PTR fs:0x28
+
+mov    QWORD PTR [rbp-0x8],rax
+xor    eax,eax
+nop
+mov    DWORD PTR [rbp-0xcc],0x1234
+
+nop
+mov    DWORD PTR [rbp-0xc8],0x1234
+
+nop
+mov    DWORD PTR [rbp-0xc4],0x1234
+
+nop
+mov    QWORD PTR [rbp-0xa0],0x1234
+
+nop
+mov    DWORD PTR [rbp-0xc0],0xffffedcc
+
+nop
+mov    DWORD PTR [rbp-0xbc],0xffffedcc
+
+nop
+pxor   xmm0,xmm0
+movss  DWORD PTR [rbp-0xb8],xmm0
+
+nop
+movss  xmm0,DWORD PTR [rip+0x207]        # 8e4 <_IO_stdin_used+0x14>
+
+movss  DWORD PTR [rbp-0xb4],xmm0
+
+nop
+movss  xmm0,DWORD PTR [rip+0x1fa]        # 8e8 <_IO_stdin_used+0x18>
+
+movss  DWORD PTR [rbp-0xb0],xmm0
+
+nop
+pxor   xmm0,xmm0
+movsd  QWORD PTR [rbp-0x98],xmm0
+
+nop
+movsd  xmm0,QWORD PTR [rip+0x1e4]        # 8f0 <_IO_stdin_used+0x20>
+
+movsd  QWORD PTR [rbp-0x90],xmm0
+
+nop
+movsd  xmm0,QWORD PTR [rip+0x1db]        # 8f8 <_IO_stdin_used+0x28>
+
+movsd  QWORD PTR [rbp-0x88],xmm0
+
+nop
+mov    QWORD PTR [rbp-0x30],0x0
+
+mov    QWORD PTR [rbp-0x28],0x0
+
+mov    QWORD PTR [rbp-0x20],0x0
+
+mov    QWORD PTR [rbp-0x18],0x0
+
+mov    QWORD PTR [rbp-0x10],0x0
+
+mov    DWORD PTR [rbp-0x2c],0x1
+mov    DWORD PTR [rbp-0x28],0x22
+mov    DWORD PTR [rbp-0x24],0x333
+mov    DWORD PTR [rbp-0x20],0x4444
+mov    rax,QWORD PTR [rbp-0x30]
+mov    rdx,QWORD PTR [rbp-0x28]
+mov    QWORD PTR [rbp-0x60],rax
+mov    QWORD PTR [rbp-0x58],rdx
+mov    rax,QWORD PTR [rbp-0x20]
+mov    rdx,QWORD PTR [rbp-0x18]
+mov    QWORD PTR [rbp-0x50],rax
+mov    QWORD PTR [rbp-0x48],rdx
+mov    rax,QWORD PTR [rbp-0x10]
+mov    QWORD PTR [rbp-0x40],rax
+nop
+mov    eax,DWORD PTR [rbp-0x58]
+mov    DWORD PTR [rbp-0xac],eax
+nop
+mov    BYTE PTR [rbp-0xce],0x41
+nop
+mov    BYTE PTR [rbp-0xcd],0x42
+nop
+lea    rax,[rip+0x124]        # 8d8 <_IO_stdin_used+0x8>
+mov    QWORD PTR [rbp-0x80],rax
+nop
+lea    rax,[rip+0x11d]        # 8dd <_IO_stdin_used+0xd>
+mov    QWORD PTR [rbp-0x78],rax
+nop
+nop
+nop
+mov    QWORD PTR [rbp-0x70],0x0
+
+mov    QWORD PTR [rbp-0x68],0x0
+
+nop
+movabs rax,0x41414141414141
+
+mov    QWORD PTR [rbp-0x70],rax
+nop
+mov    DWORD PTR [rbp-0x68],0x414141
+nop
+nop
+nop
+mov    eax,DWORD PTR [rbp-0xbc]
+add    eax,0x41414141
+mov    DWORD PTR [rbp-0xbc],eax
+nop
+mov    eax,DWORD PTR [rbp-0xcc]
+lea    edx,[rax+0x1]
+mov    DWORD PTR [rbp-0xcc],edx
+mov    DWORD PTR [rbp-0xa8],eax
+nop
+mov    eax,DWORD PTR [rbp-0xcc]
+add    eax,0x1
+mov    DWORD PTR [rbp-0xcc],eax
+mov    DWORD PTR [rbp-0xa4],eax
+nop
+nop
+nop
+mov    eax,0x0
+mov    rcx,QWORD PTR [rbp-0x8]
+xor    rcx,QWORD PTR fs:0x28
+
+je     84a <main+0x1e0>
+call   540 <__stack_chk_fail@plt>
+leave  
+ret    
+nop    DWORD PTR [rax+0x0]
+

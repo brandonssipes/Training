@@ -1,0 +1,141 @@
+0000054d <main>:
+lea    ecx,[esp+0x4]
+and    esp,0xfffffff0
+push   DWORD PTR [ecx-0x4]
+push   ebp
+mov    ebp,esp
+push   edi
+push   ebx
+push   ecx
+sub    esp,0xcc
+call   549 <__x86.get_pc_thunk.dx>
+add    edx,0x1a70
+mov    eax,gs:0x14
+mov    DWORD PTR [ebp-0x1c],eax
+xor    eax,eax
+nop
+mov    DWORD PTR [ebp-0xcc],0x1234
+
+nop
+mov    DWORD PTR [ebp-0xc8],0x1234
+
+nop
+mov    DWORD PTR [ebp-0xc4],0x1234
+
+nop
+mov    DWORD PTR [ebp-0x98],0x1234
+
+mov    DWORD PTR [ebp-0x94],0x0
+
+nop
+mov    DWORD PTR [ebp-0xc0],0xffffedcc
+
+nop
+mov    DWORD PTR [ebp-0xbc],0xffffedcc
+
+nop
+fldz   
+fstp   DWORD PTR [ebp-0xb8]
+nop
+fld    DWORD PTR [edx-0x17ec]
+fstp   DWORD PTR [ebp-0xb4]
+nop
+fld    DWORD PTR [edx-0x17e8]
+fstp   DWORD PTR [ebp-0xb0]
+nop
+fldz   
+fstp   QWORD PTR [ebp-0x90]
+nop
+fld    QWORD PTR [edx-0x17e0]
+fstp   QWORD PTR [ebp-0x88]
+nop
+fld    QWORD PTR [edx-0x17d8]
+fstp   QWORD PTR [ebp-0x80]
+nop
+lea    ebx,[ebp-0x44]
+mov    eax,0x0
+mov    ecx,0xa
+mov    edi,ebx
+rep stos DWORD PTR es:[edi],eax
+mov    DWORD PTR [ebp-0x40],0x1
+mov    DWORD PTR [ebp-0x3c],0x22
+mov    DWORD PTR [ebp-0x38],0x333
+mov    DWORD PTR [ebp-0x34],0x4444
+mov    eax,DWORD PTR [ebp-0x44]
+mov    DWORD PTR [ebp-0x6c],eax
+mov    eax,DWORD PTR [ebp-0x40]
+mov    DWORD PTR [ebp-0x68],eax
+mov    eax,DWORD PTR [ebp-0x3c]
+mov    DWORD PTR [ebp-0x64],eax
+mov    eax,DWORD PTR [ebp-0x38]
+mov    DWORD PTR [ebp-0x60],eax
+mov    eax,DWORD PTR [ebp-0x34]
+mov    DWORD PTR [ebp-0x5c],eax
+mov    eax,DWORD PTR [ebp-0x30]
+mov    DWORD PTR [ebp-0x58],eax
+mov    eax,DWORD PTR [ebp-0x2c]
+mov    DWORD PTR [ebp-0x54],eax
+mov    eax,DWORD PTR [ebp-0x28]
+mov    DWORD PTR [ebp-0x50],eax
+mov    eax,DWORD PTR [ebp-0x24]
+mov    DWORD PTR [ebp-0x4c],eax
+mov    eax,DWORD PTR [ebp-0x20]
+mov    DWORD PTR [ebp-0x48],eax
+nop
+mov    eax,DWORD PTR [ebp-0x64]
+mov    DWORD PTR [ebp-0xac],eax
+nop
+mov    BYTE PTR [ebp-0xce],0x41
+nop
+mov    BYTE PTR [ebp-0xcd],0x42
+nop
+lea    eax,[edx-0x17f8]
+mov    DWORD PTR [ebp-0xa8],eax
+nop
+lea    eax,[edx-0x17f3]
+mov    DWORD PTR [ebp-0xa4],eax
+nop
+nop
+nop
+mov    DWORD PTR [ebp-0x78],0x0
+mov    DWORD PTR [ebp-0x74],0x0
+mov    DWORD PTR [ebp-0x70],0x0
+nop
+mov    DWORD PTR [ebp-0x78],0x41414141
+mov    DWORD PTR [ebp-0x74],0x414141
+nop
+mov    DWORD PTR [ebp-0x70],0x414141
+nop
+nop
+nop
+mov    eax,DWORD PTR [ebp-0xbc]
+add    eax,0x41414141
+mov    DWORD PTR [ebp-0xbc],eax
+nop
+mov    eax,DWORD PTR [ebp-0xcc]
+lea    edx,[eax+0x1]
+mov    DWORD PTR [ebp-0xcc],edx
+mov    DWORD PTR [ebp-0xa0],eax
+nop
+mov    eax,DWORD PTR [ebp-0xcc]
+add    eax,0x1
+mov    DWORD PTR [ebp-0xcc],eax
+mov    DWORD PTR [ebp-0x9c],eax
+nop
+nop
+nop
+mov    eax,0x0
+mov    ecx,DWORD PTR [ebp-0x1c]
+xor    ecx,DWORD PTR gs:0x14
+je     72e <main+0x1e1>
+call   7b0 <__stack_chk_fail_local>
+add    esp,0xcc
+pop    ecx
+pop    ebx
+pop    edi
+pop    ebp
+lea    esp,[ecx-0x4]
+ret    
+xchg   ax,ax
+xchg   ax,ax
+

@@ -1,0 +1,43 @@
+00000000000005fa <main>:
+push   rbp
+mov    rbp,rsp
+nop
+mov    DWORD PTR [rbp-0x4],0x0
+nop
+nop
+nop
+mov    eax,DWORD PTR [rbp-0x4]
+cmp    eax,0xff
+jle    614 <main+0x1a>
+nop
+nop
+nop
+nop
+jmp    624 <main+0x2a>
+nop
+mov    eax,DWORD PTR [rbp-0x4]
+add    eax,0x1
+mov    DWORD PTR [rbp-0x4],eax
+nop
+mov    eax,DWORD PTR [rbp-0x4]
+cmp    eax,0x9
+jle    619 <main+0x1f>
+nop
+nop
+nop
+mov    DWORD PTR [rbp-0x4],0x0
+jmp    642 <main+0x48>
+nop
+mov    eax,DWORD PTR [rbp-0x4]
+add    eax,0x1
+mov    DWORD PTR [rbp-0x4],eax
+mov    eax,DWORD PTR [rbp-0x4]
+cmp    eax,0x9
+jle    638 <main+0x3e>
+nop
+nop
+nop
+mov    eax,0x0
+pop    rbp
+ret    
+

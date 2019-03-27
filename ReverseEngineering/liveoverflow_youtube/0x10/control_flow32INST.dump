@@ -1,0 +1,46 @@
+000004ed <main>:
+4ed:  push   ebp
+4ee:  mov    ebp,esp
+4f0:  sub    esp,0x10
+4f3:  call   553 <__x86.get_pc_thunk.ax>
+4f8:  add    eax,0x1ae4
+4fd:  nop
+4fe:  mov    DWORD PTR [ebp-0x4],0x0
+505:  nop
+506:  nop
+507:  nop
+508:  mov    eax,DWORD PTR [ebp-0x4]
+50b:  cmp    eax,0xff
+510:  jle    513 <main+0x26>
+512:  nop
+513:  nop
+514:  nop
+515:  nop
+516:  jmp    523 <main+0x36>
+518:  nop
+519:  mov    eax,DWORD PTR [ebp-0x4]
+51c:  add    eax,0x1
+51f:  mov    DWORD PTR [ebp-0x4],eax
+522:  nop
+523:  mov    eax,DWORD PTR [ebp-0x4]
+526:  cmp    eax,0x9
+529:  jle    518 <main+0x2b>
+52b:  nop
+52c:  nop
+52d:  nop
+52e:  mov    DWORD PTR [ebp-0x4],0x0
+535:  jmp    541 <main+0x54>
+537:  nop
+538:  mov    eax,DWORD PTR [ebp-0x4]
+53b:  add    eax,0x1
+53e:  mov    DWORD PTR [ebp-0x4],eax
+541:  mov    eax,DWORD PTR [ebp-0x4]
+544:  cmp    eax,0x9
+547:  jle    537 <main+0x4a>
+549:  nop
+54a:  nop
+54b:  nop
+54c:  mov    eax,0x0
+551:  leave  
+552:  ret    
+
